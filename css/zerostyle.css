@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+
+.navs{
+
+    background-color: rgb(146, 234, 173);
+    padding:50px
+}
+.container{
+    background-color: rgb(241, 192, 156);
+    padding:25px;
+    padding-bottom: 50px;
+}
+
+.logo{
+    margin-left: 10px;
+    font-family: Arial;
+    float: left;
+    color: rebeccapurple;
+    transition: 0.4 ease-in-out;
+    
+}
+.logo:hover{
+    color: blueviolet;
+}
+.links{
+    float: right;
+}
+
+.links ul {
+    display: flex;
+    
+}
+.links ul li{
+    list-style-type: none;
+    margin: 15px;
+}
+.links ul li a{
+    text-decoration: none;
+    color:black;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.links ul li a:hover {
+    color:azure
+    
+}

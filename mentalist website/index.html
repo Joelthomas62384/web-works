@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Moon+Dance&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Moon+Dance&display=swap'); </style>
+   
+    <title>Mentalist - Sandheep Fradian</title>
+</head>
+<body>
+    <div id="container" class="containr">
+        <div class="banner">
+            <div class="logo">
+                <h1>Sandheep Fradian</h1>
+            </div>
+            <div class="msg">
+                <small>&nbsp;&nbsp;&nbsp;Welcome to the World of Mentalism</small>
+                <h1>Art of Mentalism </h1>
+                <small id="sm"> Sandheep Fradian</small>
+
+                <a href="" type="button" id="btn-1">Explore More &rarr;</a>
+            </div>
+            <menu id = "menu" >
+                <img id="menubtn" src="images/menu.png" alt="">
+
+            </menu>
+        </div>
+        <div  id="Sidemenu" style="right: -250px;">
+            <ul>
+                <li><a href="/#">Home</a></li>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#footer">Testimonies</a></li>
+                <li><a href="#footer2">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section>
+        <div id="about" class="title">
+            <h1>About <span>Sandheep</span></h1>
+        </div>
+        <div class="about-box">
+            <div class="about-img">
+                <img src="images/272820178_144699351300060_9173082099918914101_n.webp" alt="">
+                <div class="overlay"></div>
+            </div>
+            <div class="about">
+                <h2>About me</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptatum accusantium impedit. Officia, beatae, facere eveniet dolorem doloribus odio aut ad hic magni optio corrupti commodi similique nemo sed numquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni esse distinctio aperiam cum, fuga earum deserunt recusandae ratione enim, minus rerum eum laborum officiis aspernatur. Animi incidunt magni doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas, a ratione quia at vitae. Fugit, minus, explicabo praesentium atque modi beatae repudiandae autem reiciendis assumenda iure ex, deserunt necessitatibus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem sequi officia perspiciatis omnis corporis eum, doloribus eos delectus similique, facere eaque esse, iste vero? Itaque placeat nisi error facilis accusantium.</p>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <section id="course" class="fixed-image">
+        <h1>Course</h1>
+    </section>
+  
+       <section id="footer"></section>
+       <section id="footer2"></section>
+
+    <script>
+        let Sidemenu = document.getElementById('Sidemenu')
+        let menu = document.getElementById('menu')
+        let menubtn = document.getElementById('menubtn')
+        menu.onclick = function(){
+            if (Sidemenu.style.right=="-250px"){
+                Sidemenu.style.right = "0"
+                menubtn.src = "images/close.png"
+                menu.style.right = "3%"
+            }else{
+                Sidemenu.style.right = "-250px"
+                menubtn.src = "images/menu.png"
+                menu.style.right = "5%"
+            }
+        }
+    </script>
+ 
+</body>
+    
+</body>
+</html>

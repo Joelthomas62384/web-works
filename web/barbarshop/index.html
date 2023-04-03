@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Moon+Dance&display=swap" rel="stylesheet">
+    <title>Barbar shop design - Joel Thomas</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Moon+Dance&display=swap'); </style>
+</head>
+<body>
+    <section id="banner">
+        <a href="#"><img src="images/logo.png" alt="" class="logo"></a>
+        <div class="banner-text">
+            <h1>Joel's Hair Studio</h1>
+            <p>Style your Hair means Style your Life</p>
+            <div class="banner-btn">
+                <a href=""> <span></span>Find out</a>
+                <a href=""><span></span>Contact</a>
+            </div>
+
+        </div>
+    </section>
+    <div id="sideNav" style="right: -250px;">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img  src="images/menu.png" id="menu">
+    </div>
+
+    <section id="feature">
+        <div class="title-text">
+            <p>Features</p>
+            <h1>Why choose Us</h1>
+        </div>
+    </section>
+    <script>
+        let menubtn = document.getElementById('menubtn')
+        let sideNav = document.getElementById('sideNav')
+        let menu = document.getElementById('menu')
+        sideNav.style.right == "-250px"
+
+        menubtn.onclick = function(){
+            if (sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src="images/close.png"
+                menubtn.style.right = "1%"
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src="images/menu.png"
+                menubtn.style.right = "4%"
+                
+            }
+        }
+    </script>
+</body>
+</html>

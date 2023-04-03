@@ -1,0 +1,28 @@
+.image{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+.add{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    background: rgba(0,0,2,0.7);
+    height: 35px;
+    cursor: pointer;
+    bottom: -45px;
+    opacity: 0;
+    transition: 1s;
+
+} 
+.image:hover .add{
+    bottom: 0;
+    opacity: 1;
+}
